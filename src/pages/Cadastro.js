@@ -1,6 +1,5 @@
 import React from "react";
-import { useState } from "react";
-import { Text, View, ImageBackground, TouchableOpacity, Image } from 'react-native';
+import { Text, ImageBackground, TouchableOpacity, Image } from 'react-native';
 
 import TI from "../components/TI";
 

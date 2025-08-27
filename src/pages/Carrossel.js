@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View, Image, Dimensions, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-native';
 
 // Import do 'removeItem' para tirar o login do usuário
 import { removeItem } from './Components/AsyncStorage';
@@ -57,7 +57,7 @@ function BackdropPhoto({ photo, index, scrollX }) {
   })
 
   return (
-    <Animated.Image source={{ uri: photo.Poster }} style={[StyleSheet.absoluteFillObject, stylez]} blurRadius={10} />
+    <Animated.Image source={{ uri: photo.Poster }} style={[StyleSheet.absoluteFillObject, stylez]} blurRadius={2} />
   )
 }
 

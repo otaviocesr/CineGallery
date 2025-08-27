@@ -34,10 +34,10 @@ export default function AppNavigation() {
     return null
   }
 
-  if (!showOnboarding) {
+  if (showOnboarding) {
     return (
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Carrossel" screenOptions={{ headerShown: false, }}>
+        <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false, }}>
           <Stack.Screen name='Home' component={Home} />
           <Stack.Screen name='Cadastro' component={Cadastro} />
           <Stack.Screen name='Login' component={Login} />
@@ -48,7 +48,7 @@ export default function AppNavigation() {
   } else {
     return (
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false, }}>
+        <Stack.Navigator initialRouteName="Carrossel" screenOptions={{ headerShown: false, }}>
           <Stack.Screen name='Home' component={Home} />
           <Stack.Screen name='Cadastro' component={Cadastro} />
           <Stack.Screen name='Login' component={Login} />
